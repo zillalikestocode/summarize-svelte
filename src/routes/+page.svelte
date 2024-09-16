@@ -22,6 +22,13 @@
   }
 </script>
 
+<svelte:head>
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="upgrade-insecure-requests"
+  />
+</svelte:head>
+
 <div class="flex min-h-screen p-5 flex-col justify-center items-center">
   <div class="flex w-full md:w-72 flex-col items-center">
     <h4 class="font-['Azeret_Mono'] mb-2.5 font-bold text-2xl">summarize.</h4>
