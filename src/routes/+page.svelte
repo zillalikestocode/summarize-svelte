@@ -8,11 +8,14 @@
 
   async function summarize() {
     loading = true;
-    const response = await fetch("http://localhost:8080/api/v1/summary", {
-      method: "POST",
-      body: JSON.stringify({ url }),
-      headers: { "Content-type": "application/json" },
-    }).then((res) => res.json());
+    const response = await fetch(
+      "http://qw4g8soscwcsw44sscgoow4s.135.148.139.0.sslip.io/api/v1/summary",
+      {
+        method: "POST",
+        body: JSON.stringify({ url }),
+        headers: { "Content-type": "application/json" },
+      },
+    ).then((res) => res.json());
     console.log(response);
     summary = response.summary[0];
     loading = false;
